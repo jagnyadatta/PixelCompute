@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+header nav{
+    border-bottom: 1px solid rgb(148, 132, 132);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2D3E51;
+    color: white;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+nav h1{
+    font-size: 20px;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+nav ul a:hover{
+    text-decoration: underline;
+}
+nav input{
+    width: 150px;
+    height: 23px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    padding: 15px 10px;
+    background-color: rgb(210, 221, 231);
+}
+nav span{
+    font-size: 20px;
+    cursor: pointer;
+}
+main{
+    background-color: #d5e1ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.image-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-direction: column;
+    padding: 10px 30px;
+}
+.image-section img{
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.cart-section{
+    width: 30%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 1px 10px rgb(228, 222, 222);
+}
+.cart-section .top-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.cart-section .top-sec h2{
+    font-size: 34px;
+    font-weight: 600;
+}
+.cart-section .top-sec p{
+    font-weight: 100;
+    color: rgb(88, 81, 81);
+    margin-top: 10px;
+}
+.down-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-top: 40px;
+}
+.down-sec ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    list-style: none;
+}
+.down-sec ul li button{
+    padding: 5px 10px;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+
+.btns{
+    display: flex;
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    padding: 10px 0px;
+    justify-content: center;
+    gap: 10px;
+}
+.btns button{
+    padding: 10px 20px;
+    border: 1px solid #E84C3D;
+    border-radius: 30px;
+    color: #E84C3D;
+    cursor: pointer;
+    transition: 0.1s all ease-in;
+}
+.btns button:active{
+    transform: scale(0.95);
+}
+.btns .btn1{
+    background-color: #E84C3D;
+    color: white;
+}

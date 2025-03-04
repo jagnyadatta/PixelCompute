@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+header nav{
+    border-bottom: 1px solid rgb(148, 132, 132);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2D3E51;
+    color: white;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+nav h1{
+    font-size: 20px;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+nav ul a:hover{
+    text-decoration: underline;
+}
+nav input{
+    width: 150px;
+    height: 23px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    padding: 15px 10px;
+    background-color: rgb(210, 221, 231);
+}
+nav span{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+}
+.side-menu{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 300px;
+    margin: 20px 30px 0px 10px;
+    padding: 5px;
+    line-height: 25px;
+    float: left;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+.side-menu ul{
+    list-style: none;
+    font-size: 18px;
+    margin-top: 15px;
+}
+.side-menu ul li{
+    margin-top: 8px;
+}
+.side-menu ul a{
+    text-decoration: none;
+    color: #409FDF;
+    font-size: 20px;
+    font-weight: bold;
+}
+.side-menu ul li a{
+    transition: 0.3s;
+}
+.side-menu ul li a:hover{
+    font-weight: 800;
+    transition: 0.5s;
+}
+
+/* ------main card section--------  */
+.card-section{
+    width: 100%;
+    margin: 80px 40px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    float: right;   
+}
+.card-section .card{
+    /* border: 1px solid blue; */
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    border: 1px solid rgb(156, 153, 153);
+    box-shadow: 0px 0px 10px 2px gray;
+    padding: 15px;
+    /* transform: scale(1); */
+    transition: 0.5s;
+    text-align: center;
+}
+.card-section .card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.card-section .card img{
+    width: 100%;
+    height: 69%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.card-section .card a{
+    text-decoration: none;
+    color: black;
+}
+.card-section .card p{
+    padding: 5px;
+    line-height: 20px;
+}
+.card-section .card a span{
+    margin: 5px 0px 5px 0px;
+    font-weight: 700;
+}
