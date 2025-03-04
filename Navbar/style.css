@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to top right,#1F5C7B,#5a9ec0,#2C4E86);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(25, 70, 103);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-bottom: 5px;
+    font-weight: bolder;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.actions ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+.actions ul li a{
+    text-decoration: none;
+    color: white;
+}
+.actions ul li .cta-button{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgb(45, 141, 212);
+    border: none;
+    border-radius: 5px; 
+    transition: transform 0.2s ease-in-out;
+}
+.actions ul li .cta-button:active{
+    transform: scale(0.95);
+}
+
+/* hero section  */
+.hero{
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.hero-content h1{
+    margin: 15px 0px;
+}
+.hero-content p{
+    margin: 15px 0px;
+}
+.hero-content .cta-button{
+    display: inline;
+    padding: 5px 10px;
+    background-color: rgb(21, 122, 199);
+    border: none;
+    border-radius: 5px; 
+    transition: transform 0.2s ease-in-out;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+.hero-content .cta-button:active{
+    transform: scale(0.95);
+}
+.hero-image-container img{
+    width: 400px;
+}
+
+/* sections  */
+section{
+    width: 60%;
+    height: 150px;
+    margin:0px auto 30px auto;
+    padding: 20px 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgb(127, 149, 161);
+    background-color: #407EAD;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section h2{
+    /* text-align: start; */
+    margin-bottom: 10px;
+}
+section ul{
+    margin-left: 30px;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: #194667;
+}
