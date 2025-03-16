@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    background-size: cover;
+    color: #333;
+    gap: 30px;
+}
+.container{
+    display: block;
+    width: 70%;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0px 0px 20px rgb(247, 243, 212);
+}
+.container h1{
+    font-size: 34px;
+    color: #0d47a1;
+    text-align: center;
+}
+form label{
+    font-weight: 700;
+    color: #0d47a1;
+}
+input, textarea{
+    width: 100%;
+    background-color: #f3f4f6;
+    padding: 10px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    outline: none;
+    resize: vertical;
+}
+input:focus, textarea:focus{
+    border: 1px solid #ff5722;
+    outline:none;
+}
+form button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right,#FF9013,#FF4E3A);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/*================ Dialog Box ==================*/
+dialog{
+    text-align: center;
+    width: 50%;
+    height: 20%;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(to right, #578ED0,#8051AB);
+    color: white;
+    margin: auto;
+}
+dialog h2{
+    margin-top: 7.5%;
+}
+dialog p{
+    position: absolute;
+    top: 10px;  
+    right: 10px;
+    cursor: pointer;
+}
+
+/* ======= Event Card Section ============= */
+#event-card{
+    display: none;
+    width: 600px;
+    background-color: white;
+    padding: 15px;
+    border: solid #e74c3c;
+    border-radius: 13px;
+}
+#event-card .cardHeader{
+    text-align: center;
+    & h1{
+        color: #e74c3c;
+    }
+}
+#event-card .cardPara{
+    margin-top: 5px;
+    gap: 3px;
+    line-height: 1.6;
+}
+#event-card .cardPara p:first-child{
+    color: #e74c3c;
+    font-weight: bold;
+}
+#event-card .cardPara p:last-child{
+    line-height: 1;
+    text-align: justify;
+}
+
+
+/* Responsive css */
+@media screen and (max-width:767px){
+    .container{
+        width: 90%;
+    }
+    .container h1{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    #event-card{
+        width: 97%;
+    }
+    dialog{
+        width: 85%;
+    }
+    dialog h2{
+        margin-top: 17.5%;
+    }
+}

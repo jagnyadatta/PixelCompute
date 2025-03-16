@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event-Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create an Event Invite</h1>
+        <form>
+            <label for="event-name">Event Name</label>
+            <input type="text" id="event-name" placeholder="Jagnyadatta Dalai"><br>
+            <label for="event-date">Event Date</label>
+            <input type="date" id="event-date"><br>
+            <label for="event-startTime">Start time</label>
+            <input type="time" id="event-startTime"><br>
+            <label for="event-endTime">End time</label><br>
+            <input type="time" id="event-endTime"><br>
+            <label for="event-Desc">Event Description</label>
+            <textarea id="event-Desc" placeholder="Brief description of the event"></textarea><br>
+            <label for="event-location">Location</label>
+            <input type="text" id="event-location" placeholder="Location of the event"><br>
+            <button type="submit">Create Event</button>
+        </form>
+    </div>
+    <!-- Dialog Box -->
+     <dialog>
+        <h2>Please fill in all fields</h2>
+        <p class="closeBtn">❌</p>
+     </dialog>
+
+     <!-- Event Card Page -->
+      <div id="event-card">
+        <div class="cardHeader">
+            <h1>YOU ARE INVITED</h1>
+            <p>TO JOIN THIS</p>
+            <h2 class="event-nameField">Jagnyadatta Dalai</h2>
+        </div>
+        <div class="cardPara">
+            <p class="event-dateField">Sunday, March 16, 2025</p>
+            <p class="event-timeField">10:10 AM - 06:30 PM</p>
+            <p class="event-locationField">Sarang, Dhenkanal</p>
+            <p class="event-descField">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae architecto, maxime accusamus cupiditate tenetur debitis hic mollitia, facilis</p>
+        </div>
+      </div>
+
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+</html>
