@@ -52,8 +52,10 @@ console.log(pickWord);
 const inputBox = document.getElementById('inputWord');
 const guess = document.getElementById('guess');
 const dialog = document.querySelector('dialog');
+const dialogMsg = document.getElementById('dialogMsg');
 const closeBtn = document.getElementById('closeBtn');
 const allCells = Array.from(document.querySelectorAll('.cell'));
+const reloadMsg = document.querySelector('.reloadMsg');
 let guessCount = 0;
 
 guess.addEventListener("click",()=>{
@@ -85,6 +87,14 @@ guess.addEventListener("click",()=>{
         dialog.show();
         guess.style.display = "none";
         inputBox.style.display = "none";
+        reloadMsg.style.display = "block";
+    }
+    if(guessCount == 5){
+      dialogMsg.textContent = "You Lose!";
+      dialog.show();
+      guess.style.display = "none";
+      inputBox.style.display = "none";
+      reloadMsg.style.display = "block";
     }
     inputBox.value = '';
     guessCount++;

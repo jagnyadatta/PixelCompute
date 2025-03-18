@@ -93,3 +93,10 @@ dialog button{
     cursor: pointer;
     outline: none;
 }
+
+.reloadMsg{
+    display: none;
+    color: red;
+    font-size: 20px;
+    margin-top: 15px;
+}
