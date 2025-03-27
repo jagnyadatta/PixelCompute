@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://ik.imagekit.io/d9mvewbju/BBA-NeetoSite-and-Project-Resources/password-generator-container_tarSlyutN.png?updatedAt=1730755103984');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 5px;
+    gap: 20px;
+    box-shadow: 1px 1px 10px rgb(172, 170, 170);
+}
+
+.inputBox{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 60px;
+    padding: 15px ;
+    background-color: #f4f4f4;
+    text-align: right;
+    border: none;
+    border-radius: 5px;
+}
+#showPass{
+    max-width: 70%;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 22px;
+}
+#copyPass{
+    padding: 0px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+#copyPass:active{
+    background-color: #45a049;
+    transform: scale(0.97);
+    transition: 0.2s all ease-in-out;
+}
+
+.copiedMsg{
+    display: none;
+    width: auto;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 10px;
+    left: 5px;
+}
+.checkBoxMsg{
+    display: none;
+    width: auto;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 10px;
+    left: 5px;
+}
+
+.rangeBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.checkBoxes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.checkBoxes>input{
+    margin-left: 10px;
+}
+
+.information{
+    display: flex;
+    text-align: left;
+    /* border:1px solid red; */
+    gap: 20px;
+    margin-top: 15px;
+}
+ul {
+    list-style-position: inside;
+}
