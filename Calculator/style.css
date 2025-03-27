@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Helvetica';
+    background-color: #ecf0f1;
+    color: #2d2d2d;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    border: 0px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: snow;
+}
+.resultBox{
+    border: 1px solid gray;
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.keypads{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.operandBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 8px;
+}
+.operatorBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 8px;
+    margin-left: 10px;
+    font-size: 24px;
+}
+.operandBox>button{
+    width: 60px;
+    height: 60px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.operatorBox>button{
+    width: 60px;
+    height: 60px;
+    background-color: palevioletred;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.05);
+    transition: 0.1s all ease-in-out;
+}
+button:active{
+    transform: scale(0.97);
+}
