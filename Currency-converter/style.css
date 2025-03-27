@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f4f4f4;
+}
+
+.container{
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8D800;
+    border: none;
+    border-radius: 10px;
+    gap: 30px;
+}
+.currInputBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+select{
+    width: 170px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+input{
+    width: 380px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+input:focus{
+    border: .5px solid #555;
+}
+button{
+    width: 380px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+button:active{
+    transform: scale(0.97);
+    transition: 0.2s all ease-in-out;
+}
+
+.result{
+    display: none;
+    font-weight: bold;
+}
+.error{
+    display: none;
+    color: red;
+}
