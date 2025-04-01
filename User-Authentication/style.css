@@ -1,0 +1,76 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+  }
+  
+  .authentication {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+  }
+  
+  .authentication h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  .authentication input {
+    display: block;
+    width: 95%;
+    margin: 15px auto;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .authentication input:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #ffffff;
+  }
+  
+  .authentication button {
+    padding: 12px 25px;
+    font-size: 18px;
+    color: #ffffff;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .authentication button:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .authentication #message-section {
+    margin-top: 20px;
+  }
+  
+  .authentication #status-message {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .authentication #completion-message {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #888;
+  }
