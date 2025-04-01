@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Simulation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="upload">
+        <h2>Upload Your File</h2>
+        <form id="upload-form">
+          <div class="input-container">
+            <label for="file-name">
+              <i class="fas fa-file-alt"></i>
+              <span>Enter the file name</span>
+            </label>
+            <input type="text" id="file-name" placeholder="document.pdf" required>
+          </div>
+          <div class="input-container">
+            <label for="check-value">
+              <i class="fas fa-calculator"></i>
+              <span>Enter the check value</span>
+            </label>
+            <input type="number" id="check-value" placeholder="84" required>
+          </div>
+          <button type="submit" id="upload-button">
+            <i class="fas fa-cloud-upload-alt"></i> Upload
+          </button>
+        </form>
+        <p id="status-message"></p>
+        <p id="completion-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
