@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="title-bar">
+            <h1>To-Do List</h1>
+            <input type="text" placeholder="Search taskes..." id="search-task">
+        </div>
+        <div id="add-task-div">
+            <input type="text" id="task" placeholder="Add your to-do task..">
+            <input type="date" id="date">
+            <input type="time" id="time">
+            <button id="addTaskBtn" class="normalBtn">Add Task</button>
+        </div>
+        <div id="task-lists">
+            <h2>Due Tasks</h2>
+            <!-- <div class="list">
+                <b>16/10/2025</b>
+                <div class="taskDesc">
+                    <span>Buy Groceries at <b>05:00 pm</b></span>
+                    <div class="btns">
+                        <button id="edit-btn">Edit</button>
+                        <button id="delete-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <b>16/10/2025</b>
+                <div class="taskDesc">
+                    <span>Buy Groceries at <b>05:00 pm</b></span>
+                    <div class="btns">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="alertBox">
+            <span>X</span>
+            <p>Please fill in all fields.</p>
+            <button class="alertBtn">Okay</button>
+        </div>
+    </div>
+    <div class="overlay">
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
